@@ -1,0 +1,25 @@
+/*CSS*/
+h1{
+        color: rgb(71, 8, 187);
+        background-color:bisque ;
+        padding: 3cm;
+        text-align: center;
+    }
+
+h2{
+        color: blue;
+        border: 2px solid blueviolet;
+    }
+
+ul{
+        color: crimson;
+        background-color: antiquewhite;
+        font-size: larger;
+    }
+    
+ol{
+        font-size: x-large;
+        color: aquamarine;
+        background-color: brown;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }

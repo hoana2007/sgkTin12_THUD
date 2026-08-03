@@ -1,0 +1,40 @@
+.content1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: chocolate;
+}
+.content2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: yellowgreen;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+.content1 h2{
+    color: blue;
+}
+.content2 h2{
+    color: brown;
+}
+nav{
+    text-align: right;
+}
+li{
+    display: inline;
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: lime;
+}
+a:hover{
+    color: red;
+    background-color: cyan;
+}
+
+img{
+    display: none;
+}
+.img:active + img{
+    display: block;
+}

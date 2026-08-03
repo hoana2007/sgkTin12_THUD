@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bộ chọn là các tổ hợp có quan hệ</title>
+        <style>
+            .container {
+                font-size:medium;
+                padding: 0.1cm;
+                background-color:azure;
+                text-align: justify;
+            }
+            div p{
+                color: rgb(103, 103, 226);
+            }
+            h1, h2 {
+                
+                font-family: sans-serif;
+                font-size: 16px;   
+                color: blue;
+                text-align: left;
+            }
+            p {
+                font-family: serif;
+                text-align: left;
+                text-indent: 2em;
+                color: red;
+            }
+            p > em{
+                color: yellowgreen;
+            }
+            em + strong{
+                color: rebeccapurple;
+            }
+            em ~ strong{
+                color: red;
+            }
+        </style>
+    </head>
+<body>
+    <h1>a) Minh hoạ trường hợp E F</h1>
+    <div class="container">
+        <h1>Lịch sử CSS</h1>
+        <p>
+            Ý tưởng của CSS do kỹ sư Hakon Wium Lie, người Na Uy, thiết lập năm 1994 trong khi làm việc với Tim Berners-Lee viện hạt nhân CERN.
+        </p>
+    </div>
+    <h2>Ý tưởng CSS</h2>
+    <p>
+        Ý tưởng chính của CSS là tạo ra các mẫu định dạng riêng, độc lập cho các phần tử HTML của trong web. Cách tạo ngôn ngữ định dạng riêng này sẽ giúp ích rất nhiều nếu so sánh với việc định dạng theo từng thẻ HTML.
+    </p>
+
+    <h1>b) Minh hoạ trường hợp E > F</h1>
+    <div class="container">
+        <h1>Lịch sử CSS</h1>
+        <p>
+            Ý tưởng của CSS do kỹ sư <span><em>Hakon Wium Lie</em>, người Na Uy, thiết lập năm 1994 trong khi làm việc với Tim Berners-Lee </span>  viện hạt nhân <em>CERN</em>.
+        </p>
+    </div>
+
+    <h1>c) Minh hoạ trường hợp E + F</h1>
+    <div class="container">
+        <h1>Lịch sử CSS</h1>
+        <p>
+            Ý tưởng của CSS do kỹ sư <em>Hakon Wium Lie</em>, người Na Uy, thiết lập năm 1994 trong khi làm việc với <strong>Tim Berners-Lee </strong> viện hạt nhân <em>CERN</em>.
+        </p>
+    </div>
+
+    <h1>d) Minh hoạ trường hợp E ~ F</h1>
+    <div class="container">
+        <h1>Lịch sử CSS</h1>
+        <p>
+            Ý tưởng của CSS do kỹ sư <em>Hakon Wium Lie</em>, người Na Uy, thiết lập năm 1994 trong khi làm việc với <strong>Tim Berners-Lee </strong> viện hạt nhân <strong>CERN</strong>.
+        </p>
+    </div>
+</body>
+</html>

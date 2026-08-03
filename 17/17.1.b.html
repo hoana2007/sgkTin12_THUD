@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bộ chọn pseudo-element</title>
+        <style>
+            p::first-letter{
+                color: pink;
+            }
+            p::first-line{
+                font-family: monospace;
+                color: aqua;
+            }
+            p::selection{    
+                background-color: green;
+            }
+        </style>
+    </head>
+<body>
+        <h1>Lịch sử CSS</h1>
+        <p>
+            <a href="https://www.w3schools.com/css" target="_blank">Tự học nhanh CSS </a>
+        </p>
+        <p>
+            Pseudo-element (phần tử giả) là khái niệm chỉ một phần (hoặc một thành phần) của các phần tử bình thường. Các thành phần này có thể coi là một phần tử giả và có thể thiết lập mẫu định dạng CSS.<br>
+            Cú pháp: <span>  :Pseudo-element {thuộc tính: giái trị; }</span>
+        </p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*CSS*/
+.container{
+    color: rgb(71, 8, 187);
+    background-color:bisque ;
+    padding: 1cm;
+    text-align: justify;
+}
+.title{
+    text-align: center;
+    color: blue;
+    border: 2px solid blueviolet;
+}
+.menu{
+    color: crimson;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.content{
+    font-size: smaller;
+    color: aquamarine;
+    background-color: brown;
+    font-family:Calibri, sans-serif;
+}

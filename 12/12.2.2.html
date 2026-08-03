@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ĐĂNG KÝ THI TỐT NGHIỆP</title>
+        <style>
+            html {
+                font-size: larger;
+            }
+            label {
+                color: slateblue;
+            }
+            table {
+                background-color: bisque;
+            }
+        </style>
+        
+    </head>
+<body>
+    <div>
+        <h1>ĐĂNG KÝ THI TỐT NGHIỆP</h1>
+        <p> <h2 style="color: blue;">ĐIỀN THÔNG TIN ĐĂNG KÝ VÀO BẢNG SAU</h2></p>
+        <hr>
+        <form method="post" action="#">
+            <table style="border: 1px solid; padding: 2%;">
+                <tr>
+                    <td>
+                        <label for="hoTen">Họ và tên: </label>
+                    </td>
+                    <td>
+                        <input name="hoTen" type="text" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cCCD">CCCD: </label>
+                    </td>
+                    <td>
+                        <input name="cCCD" type="text" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ngaySinh">Ngày sinh: </label>
+                    </td>
+                    <td>
+                        <input name="ngaySinh" type="date" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gioiTinh">Giới tính: </label>
+                    </td>
+                    <td>
+                        <input name="gioiTinh" type="radio" size="50"> Nam
+                        <input name="gioiTinh" type="radio" size="50"> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="monThi">Môn Thi: </label>
+                    </td>
+                    <td>
+                        <input name="monThi" type="checkbox" size="50"> Toán học
+                        <input name="monThi" type="checkbox" size="50"> Ngữ văn
+                        <input name="monThi" type="checkbox" size="50"> Ngoại ngữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="monThi">Tổ hợp: </label>
+                    </td>
+                    <td>
+                        <select name="toHop">
+                            <option selected></option>
+                            <option>Khoa học tự nhiên</option>
+                            <option>Khoa học xã hội</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="diaChi">Địa chỉ liên hệ: </label>
+                    </td>
+                    <td>
+                        <textarea name="diaChi" cols="47" rows="5"> </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                            <input name="subMit" type="submit" value="Gửi thông tin">
+                            <input name="reSet" type="reset" value="Làm lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+</body>
+</html>

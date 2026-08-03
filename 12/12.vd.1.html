@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ĐĂNG KÝ THÀNH VIÊN CÂU LẠC BỘ</title>
+        <style>
+            html {
+                font-size: larger;
+            }
+            label {
+                color: rgb(8, 61, 236);
+            }
+            table {
+                background-color: rgb(103, 227, 231);
+            }
+        </style>
+        
+    </head>
+<body>
+    <div>
+        <h1>ĐĂNG KÝ THÀNH VIÊN CÂU LẠC BỘ</h1>
+        <p> <h2 style="color: blue;">ĐIỀN THÔNG TIN ĐĂNG KÝ VÀO BẢNG SAU</h2></p>
+        <hr>
+        <form method="post" action="#">
+            <table style="border: 1px solid; padding: 2%;">
+                <tr>
+                    <td>
+                        <label for="hoTen">Họ và tên: </label>
+                    </td>
+                    <td>
+                        <input name="hoTen" type="text" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cCCD">CCCD: </label>
+                    </td>
+                    <td>
+                        <input name="cCCD" type="text" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ngaySinh">Ngày sinh: </label>
+                    </td>
+                    <td>
+                        <input name="ngaySinh" type="date" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gioiTinh">Giới tính: </label>
+                    </td>
+                    <td>
+                        <input name="gioiTinh" type="radio" size="50"> Nam
+                        <input name="gioiTinh" type="radio" size="50"> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dienThoai">Điện thoại: </label>
+                    </td>
+                    <td>
+                        <input name="dienThoai" type="text" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="eMail">Email: </label>
+                    </td>
+                    <td>
+                        <input name="eMail" type="email" size="50">
+                        <input type="number" size="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="diaChi">Địa chỉ liên hệ: </label>
+                    </td>
+                    <td>
+                        <textarea name="diaChi" cols="47" rows="5"> </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="monThi">Tham gia CLB: </label>
+                    </td>
+                    <td>
+                        <input name="monThi" type="checkbox" size="50"> Bóng đá
+                        <input name="monThi" type="checkbox" size="50"> Bóng rổ
+                        <input name="monThi" type="checkbox" size="50"> Bóng chuyền
+                        <br>
+                        <input name="monThi" type="checkbox" size="50"> Bơi lội
+                        <input name="monThi" type="checkbox" size="50"> Võ thuật
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                            <input name="subMit" type="submit" value="Gửi thông tin">
+                            <input name="reSet" type="reset" value="Làm lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+</body>
+</html>

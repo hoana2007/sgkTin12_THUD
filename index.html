@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tổng hợp code các bài HTML & CSS trong SGK Tin học 12 - Kết nối tri thức. Bài 7 đến Bài 17 với ví dụ và bài thực hành.">
+  <title>SGK Tin học 12 — HTML & CSS | Kết nối tri thức</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" title="Chuyển chế độ sáng/tối" aria-label="Toggle theme">
+    <span id="themeIcon">🌙</span>
+  </button>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-content">
+      <h1 class="site-title">SGK Tin học 12</h1>
+      <p class="site-subtitle">Tổng hợp code các bài về HTML & CSS — Kết nối tri thức</p>
+      <div class="header-badges">
+        <span class="header-badge">
+          <img src="images/html5_logo.png" alt="HTML5">
+          HTML5
+        </span>
+        <span class="header-badge">
+          <img src="images/css3_logo.png" alt="CSS3">
+          CSS3
+        </span>
+        <span class="header-badge">📘 11 bài học</span>
+        <span class="header-badge">📝 30+ ví dụ</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb-bar" id="breadcrumbBar">
+    <div class="breadcrumb-inner">
+      <a class="breadcrumb-item" onclick="closeViewer()" title="Trang chủ">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Trang chủ
+      </a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-item" id="breadcrumbLesson"></span>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-item active" id="breadcrumbPage"></span>
+      <button class="breadcrumb-close" onclick="closeViewer()" title="Đóng" aria-label="Đóng nội dung">✕</button>
+    </div>
+  </nav>
+
+  <!-- Content Viewer -->
+  <section class="content-viewer" id="contentViewer">
+    <div class="content-box">
+      <div class="content-toolbar">
+        <div class="content-toolbar-title">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+          <span id="viewerTitle">Đang tải...</span>
+        </div>
+        <div class="content-toolbar-actions">
+          <a class="toolbar-btn" id="openNewTab" href="#" target="_blank" title="Mở trong tab mới">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Mở tab mới
+          </a>
+          <button class="toolbar-btn" onclick="closeViewer()" title="Đóng">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Đóng
+          </button>
+        </div>
+      </div>
+      <div class="content-loading" id="contentLoading">
+        <div class="loading-spinner"></div>
+        <span>Đang tải nội dung...</span>
+      </div>
+      <iframe class="content-iframe" id="contentIframe" title="Nội dung bài học"></iframe>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <p class="section-label">Danh sách bài học</p>
+
+    <div class="card-grid" id="cardGrid">
+
+      <!-- Bài 7 -->
+      <article class="lesson-card" data-keywords="html cấu trúc trang web soạn thảo lịch sử bài 7">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">7</div>
+          <div class="card-info">
+            <h2 class="card-title">HTML và cấu trúc trang web</h2>
+            <div class="card-meta">
+              <span>3 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="7/7.3.c.html">7.3.c. Soạn thảo trang web</a></li>
+            <li class="link-item"><a href="7/7.vd.1.html">7.vd.1. Web hỗ trợ soạn thảo trực tuyến</a></li>
+            <li class="link-item"><a href="7/7.vd.2.html">7.vd.2. Lịch sử phát triển HTML</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 8 -->
+      <article class="lesson-card" data-keywords="định dạng văn bản trình bày hình lượn sóng bài 8">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">8</div>
+          <div class="card-info">
+            <h2 class="card-title">Định dạng văn bản</h2>
+            <div class="card-meta">
+              <span>2 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="8/8.lt.2.html">8.lt.2. Trình bày văn bản HTML</a></li>
+            <li class="link-item"><a href="8/8.vd.2.html">8.vd.2. Hình Lượn sóng</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 9 -->
+      <article class="lesson-card" data-keywords="tạo danh sách bảng câu lạc bộ lịch bài 9">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">9</div>
+          <div class="card-info">
+            <h2 class="card-title">Tạo danh sách, bảng</h2>
+            <div class="card-meta">
+              <span>2 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="9/9.3.th.1.html">9.3.th.1. Câu lạc bộ</a></li>
+            <li class="link-item"><a href="9/9.3.th.2.html">9.3.th.2. Lịch câu lạc bộ</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 10 -->
+      <article class="lesson-card" data-keywords="tạo liên kết link trong ngoài trang giới thiệu bản thân câu lạc bộ bài 10">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">10</div>
+          <div class="card-info">
+            <h2 class="card-title">Tạo liên kết</h2>
+            <div class="card-meta">
+              <span>5 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="10/10.3.1.html">10.3.1. Liên kết trong trang</a></li>
+            <li class="link-item"><a href="10/10.3.2.html">10.3.2. Liên kết ngoài trang</a></li>
+            <li class="link-item"><a href="10/10.lt.1.html">10.lt.1. Các câu lạc bộ</a></li>
+            <li class="link-item"><a href="10/10.lt.2.html">10.lt.2. Giới thiệu bản thân</a></li>
+            <li class="link-item"><a href="10/10.vd.1.html">10.vd.1. Lịch câu lạc bộ</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 11 -->
+      <article class="lesson-card" data-keywords="chèn tệp tin đa phương tiện khung nội tuyến ảnh âm thanh video iframe bài 11">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">11</div>
+          <div class="card-info">
+            <h2 class="card-title">Chèn đa phương tiện & khung nội tuyến</h2>
+            <div class="card-meta">
+              <span>4 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="11/11.1.html">11.1. Chèn ảnh & chèn tài liệu</a></li>
+            <li class="link-item"><a href="11/11.2.html">11.2. Chèn âm thanh và video</a></li>
+            <li class="link-item"><a href="11/11.3.html">11.3. Chèn khung</a></li>
+            <li class="link-item"><a href="11/11.4.3.html">11.4.3. Chèn khung nội tuyến</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 12 -->
+      <article class="lesson-card" data-keywords="tạo biểu mẫu form đăng ký thi tốt nghiệp thành viên bài 12">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">12</div>
+          <div class="card-info">
+            <h2 class="card-title">Tạo biểu mẫu</h2>
+            <div class="card-meta">
+              <span>3 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="12/12.2.1.html">12.2.1. Tạo form</a></li>
+            <li class="link-item"><a href="12/12.2.2.html">12.2.2. ĐK thi tốt nghiệp</a></li>
+            <li class="link-item"><a href="12/12.vd.1.html">12.vd.1. ĐK thành viên câu lạc bộ</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 13 -->
+      <article class="lesson-card" data-keywords="khái niệm vai trò css thiết lập trong ngoài trang lịch sử bài 13">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">13</div>
+          <div class="card-info">
+            <h2 class="card-title">Khái niệm, vai trò của CSS</h2>
+            <div class="card-meta">
+              <span>3 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="13/13.2.a.html">13.2.a. Thiết lập CSS trong trang</a></li>
+            <li class="link-item"><a href="13/13.2.b.html">13.2.b. Thiết lập CSS ngoài trang</a></li>
+            <li class="link-item"><a href="13/13.vd.2.html">13.vd.2. Lịch sử CSS</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 14 -->
+      <article class="lesson-card" data-keywords="định dạng văn bản bằng css text formatting bài 14">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">14</div>
+          <div class="card-info">
+            <h2 class="card-title">Định dạng văn bản bằng CSS</h2>
+            <div class="card-meta">
+              <span>3 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="14/14.1.html">14.1. Định dạng văn bản 1</a></li>
+            <li class="link-item"><a href="14/14.3.1.html">14.3.1. Định dạng văn bản 2</a></li>
+            <li class="link-item"><a href="14/14.3.2.html">14.3.2. Định dạng văn bản 3</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 15 -->
+      <article class="lesson-card" data-keywords="tạo màu chữ nền bộ chọn css lợi ích selector bài 15">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">15</div>
+          <div class="card-info">
+            <h2 class="card-title">Tạo màu cho chữ và nền</h2>
+            <div class="card-meta">
+              <span>2 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="15/15.2.html">15.2. Bộ chọn trong CSS</a></li>
+            <li class="link-item"><a href="15/15.3.html">15.3. Lợi ích của CSS</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 16 -->
+      <article class="lesson-card" data-keywords="định dạng khung box model bảng tên màu css color bài 16">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">16</div>
+          <div class="card-info">
+            <h2 class="card-title">Định dạng khung</h2>
+            <div class="card-meta">
+              <span>2 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="16/16.2.html">16.2. Định dạng khung</a></li>
+            <li class="link-item"><a href="16/16.4.html">16.4. Bảng tên màu CSS</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Bài 17 -->
+      <article class="lesson-card" data-keywords="mức ưu tiên bộ chọn pseudo class element selector priority bài 17">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div class="card-number">17</div>
+          <div class="card-info">
+            <h2 class="card-title">Các mức ưu tiên của bộ chọn</h2>
+            <div class="card-meta">
+              <span>2 nội dung</span>
+            </div>
+          </div>
+          <div class="card-toggle">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-divider"></div>
+          <ul class="link-list">
+            <li class="link-item"><a href="17/17.1.a.html">17.1.a. Bộ chọn Pseudo-class</a></li>
+            <li class="link-item"><a href="17/17.1.b.html">17.1.b. Bộ chọn Pseudo-element</a></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="https://fb.com/hoana2007/" target="_blank" rel="noopener" class="footer-link">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          Facebook
+        </a>
+        <a href="https://github.com/hoana2007/sgkTin12.git" target="_blank" rel="noopener" class="footer-link">
+          <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          GitHub
+        </a>
+      </div>
+      <p class="footer-copyright">
+        © 2024 — Được tạo với <span class="heart">♥</span> bởi hoana2007
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // ── Theme Toggle ──
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const html = document.documentElement;
+
+  const savedTheme = localStorage.getItem('sgk-theme') || 'dark';
+  html.setAttribute('data-theme', savedTheme);
+  themeIcon.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+  themeToggle.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    themeIcon.textContent = next === 'dark' ? '🌙' : '☀️';
+    localStorage.setItem('sgk-theme', next);
+  });
+
+  // ── Card Toggle ──
+  function toggleCard(header) {
+    const card = header.closest('.lesson-card');
+    card.classList.toggle('open');
+  }
+
+  // ── Content Viewer ──
+  const breadcrumbBar = document.getElementById('breadcrumbBar');
+  const breadcrumbLesson = document.getElementById('breadcrumbLesson');
+  const breadcrumbPage = document.getElementById('breadcrumbPage');
+  const contentViewer = document.getElementById('contentViewer');
+  const contentIframe = document.getElementById('contentIframe');
+  const contentLoading = document.getElementById('contentLoading');
+  const viewerTitle = document.getElementById('viewerTitle');
+  const openNewTab = document.getElementById('openNewTab');
+
+  // Intercept all lesson link clicks
+  document.getElementById('cardGrid').addEventListener('click', (e) => {
+    const link = e.target.closest('.link-item a');
+    if (!link) return;
+    e.preventDefault();
+
+    const href = link.getAttribute('href');
+    const linkText = link.textContent.trim();
+    const card = link.closest('.lesson-card');
+    const lessonTitle = card.querySelector('.card-title').textContent.trim();
+    const lessonNum = card.querySelector('.card-number').textContent.trim();
+
+    loadContent(href, linkText, 'Bài ' + lessonNum + '. ' + lessonTitle);
+  });
+
+  function loadContent(url, pageTitle, lessonTitle) {
+    // Update breadcrumb
+    breadcrumbLesson.textContent = lessonTitle;
+    breadcrumbPage.textContent = pageTitle;
+    breadcrumbBar.classList.add('visible');
+
+    // Update toolbar
+    viewerTitle.textContent = pageTitle;
+    openNewTab.setAttribute('href', url);
+
+    // Show loading
+    contentLoading.classList.add('visible');
+    contentIframe.classList.add('loading');
+
+    // Show viewer
+    contentViewer.classList.add('visible');
+
+    // Scroll to viewer
+    breadcrumbBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Load iframe
+    contentIframe.src = url;
+  }
+
+  // Iframe loaded
+  contentIframe.addEventListener('load', () => {
+    contentLoading.classList.remove('visible');
+    contentIframe.classList.remove('loading');
+  });
+
+  function closeViewer() {
+    contentViewer.classList.remove('visible');
+    breadcrumbBar.classList.remove('visible');
+    contentIframe.src = 'about:blank';
+  }
+
+  // ESC to close viewer
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && contentViewer.classList.contains('visible')) {
+      closeViewer();
+    }
+  });
+</script>
+
+</body>
+</html>

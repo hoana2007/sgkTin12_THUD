@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>ĐỊNH DẠNG VĂN BẢN</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            h1{
+                color: rgb(245, 9, 9);
+                background-color:bisque ;
+                padding: 0.1cm;
+                text-align: center;
+                font-family:'Courier New';
+                font-size: 50px;
+                font-style:italic;
+                font-weight:800;
+            }
+            h2{
+                color: blue;
+            }
+            ul{
+                color: crimson;
+                background-color: antiquewhite;
+                font-size: larger;
+            }
+            ol{
+                font-size: x-large;
+                color: aquamarine;
+                background-color: brown;
+            }
+            li{
+                font-size: x-large;
+                color: aquamarine;
+                background-color: gray;
+            }
+            #coChan{
+                color: yellow;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            #koChan{
+                color: #ffff00;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #cursive{
+                color: yellow;
+                font-family: 'Brush Script MT', cursive;
+            }
+            #fantasy{
+                color: yellow;
+                font-family: 'Sofia';
+            }
+            #nghieng {
+                font-style: italic;
+            }
+            #chuDam {
+                font-weight: 900;
+            }
+            #co_x_large {
+                font-size: x-large;
+            }
+            #co_xx_large {
+                font-size: xx-large;
+            }
+        </style>
+    </head>
+<body>
+    <h1>a. CSS ĐỊNH DẠNG FONT CHỮ</h1>
+    <div>
+        <ol>
+            <li>font-family (Định dạng font chữ): <br>
+                <p>- font chữ có chân (serif): Georgia, 'Times New Roman', Times, serif >> <strong id = "coChan">Trường THPT Lương Sơn</strong></p>
+                <p>- font chữ không chân (sans-serif): Arial, Helvetica, sans-serif >> <strong id = "koChan">Trường THPT Lương Sơn</strong></p>
+                <p>- font chữ đều nhau (monospace): 'Courier New', Courier, monospace >> <strong id = "monoSpace">Trường THPT Lương Sơn</strong></p>
+                <p>- font chữ viết tay (cursive): >> <strong id = "cursive">Trường THPT Lương Sơn</strong></p>
+                <p>- font chữ trừu tượng(fantasy): >> <strong id = "fantasy">Trường THPT Lương Sơn</strong></p>
+            </li>
+            <li>font-style (Kiểu font):
+                <p>- font chữ nghiêng: >> <strong id = "nghieng">Trường THPT Lương Sơn</strong></p>
+            </li>
+            <li>font-weight (Độ đậm):
+                <p id="chuDam">- font Đậm: >> Trường THPT Lương Sơn</p>
+            </li>
+            <li>font-size/line-height (Cỡ chữ):
+                <p id = "co_x_large">Cỡ chữ: x_large </p>
+                <p id = "co_xx_large">Cỡ chữ: xx_large </p>
+            </li>
+        </ol>
+    </div>
+    <hr>
+    <h1>b. CSS định dạng màu chữ</h1>
+    <div>
+        <p style="color:red; font-size: x-large;">Màu đỏ</p>
+        <p style="color: aqua; font-size: larger;">Màu xanh dương</p>
+        <p style="color: violet; font-size:50px;">Màu tím</p>
+    </div>
+    <hr>
+    <h1>c. CSS định dạng dòng văn bản</h1>
+    <div>
+        <ul>
+            <li>Chiều cao dòng:
+                <p style="line-height: 2;">Chiều cao bằng 2 lần cỡ chữ hiện tại</p>
+                <p style="line-height: 5em;">Chiều cao bằng 2 lần cỡ chữ hiện tại</p>
+                <p style="line-height: 500%;">Chiều cao bằng 2 lần cỡ chữ hiện tại</p>
+            </li>
+            <li>
+                Căn lề chữ:
+                <p style="text-align: right;">Căn phải</p>
+                <p style="text-align: center;">Căn giữa</p>
+                <p style="text-align: justify;">Căn đều 2 bên</p>
+            </li>
+            <li>
+                Trang trí văn bản:
+                <p style="text-decoration: underline;">Gạch dưới</p>
+                <p style="text-decoration: line-through;">Gạch giữa</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
